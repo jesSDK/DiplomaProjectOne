@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.title{
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+body{
+    font-family: Quicksand, sans-serif;
+    font-weight: 300;
+}
