@@ -22,8 +22,7 @@ body {
     font-size: 280%;
 }
 
-h1,
-h2 {
+h1,h2 {
     font-family: Quicksand, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -40,6 +39,7 @@ header{
 }
 
 /* Nav menu */
+/*regular menu*/
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -68,4 +68,51 @@ header{
 }
 .active{
     border-bottom: 1px solid #3a3a3a;
+}
+/*Size down our logo for medium screen sizes*/
+@keyframes logoShrink{
+    from{transform: scale(1);}
+    to{transform: scale(0.7);}
+}
+/*Rescale for medium screens*/
+@media screen and (max-width:950px){
+    #menu{
+        clear:left;
+        float:left;
+        margin-left: 30px;
+    }
+    #logo{
+        animation: logoShrink 1s;
+        transform: scale(0.7);
+    }
+    header{
+        background-position: right;
+    }
+}
+/*Rescale for small screens*/
+@media screen and (max-width:435px){
+    #menu{
+        clear:left;
+        float:left;
+        margin-left: 5px;
+    }
+    #logo{
+        clear:left;
+        float:left;
+        font-size: 170%;
+        margin-left: -30px;
+    }
+}
+/*Rescale for even smaller screens*/
+@media screen and (max-width:320px){
+    #menu{
+        clear:left;
+        float:left;
+        margin-left: 5px;
+    }
+    #logo{
+        clear:left;
+        float:left;
+        font-size: 175%;
+    }
 }
