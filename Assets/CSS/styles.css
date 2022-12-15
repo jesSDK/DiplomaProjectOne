@@ -69,6 +69,53 @@ header{
 .active{
     border-bottom: 1px solid #3a3a3a;
 }
+
+/*Landing Core */
+#flexbox{
+    display: flex;
+}
+#about{
+    height:600px;
+    padding-top: 30px;
+}
+#about p{
+    font-size: 110%;
+}
+#landingTitle{
+    text-align: center;
+}
+#AboutText{
+    flex: 2;
+    align-items: center;
+    text-align: center;
+}
+div.kuromi{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    flex: 1;
+    height: auto;
+    margin-top: 25px; 
+}
+
+.kuromi>img {
+    object-fit: contain;
+    max-height: 600px;
+    min-width: 0;
+    min-height: 0;
+    width: auto;
+    height: auto;
+}
+
+/*Start to scale down our images*/
+@media screen and (max-width:1600px){
+    div.Kuromi {
+        flex: 0.5;
+    }
+}
 /*Size down our logo for medium screen sizes*/
 @keyframes logoShrink{
     from{transform: scale(1);}
@@ -88,6 +135,21 @@ header{
     header{
         background-position: right;
     }
+    .Kuromi{
+        display: none;
+    }
+    #landingTitle{
+        margin-top: 5%;
+    }
+    #AboutText{
+        width: 100%;
+    }
+}
+/*Rescale for between small and medium*/
+@media screen and (max-width: 900px){
+    #landingTitle{
+        margin-top: 11%;
+    }
 }
 /*Rescale for small screens*/
 @media screen and (max-width:435px){
@@ -102,6 +164,9 @@ header{
         font-size: 170%;
         margin-left: -30px;
     }
+    #landingTitle{
+        margin-top: 11%;
+    }
 }
 /*Rescale for even smaller screens*/
 @media screen and (max-width:320px){
@@ -115,42 +180,4 @@ header{
         float:left;
         font-size: 175%;
     }
-}
-
-/*Landing Core */
-#about{
-    height:600px;
-    padding-top: 30px;
-}
-#about p{
-    font-size: 110%;
-}
-#landingTitle{
-    text-align: center;
-}
-#AboutText{
-    width:33%;
-    /* margin:0 auto; */
-    position: fixed;
-    left:50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-#KuromiLeft{
-    float:left;
-    width:33%;
-    background-image: url('/Assets/Images/kuromiLeft.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
-    margin-top: 25px;
-}
-#KuromiRight{
-    float:right;
-    width:33%;
-    background-image: url('/Assets/Images/kuromiRight.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
-    margin-top: 25px; 
 }
