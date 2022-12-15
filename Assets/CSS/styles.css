@@ -116,3 +116,41 @@ header{
         font-size: 175%;
     }
 }
+
+/*Landing Core */
+#about{
+    height:600px;
+    padding-top: 30px;
+}
+#about p{
+    font-size: 110%;
+}
+#landingTitle{
+    text-align: center;
+}
+#AboutText{
+    width:33%;
+    /* margin:0 auto; */
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#KuromiLeft{
+    float:left;
+    width:33%;
+    background-image: url('/Assets/Images/kuromiLeft.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 25px;
+}
+#KuromiRight{
+    float:right;
+    width:33%;
+    background-image: url('/Assets/Images/kuromiRight.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 25px; 
+}
