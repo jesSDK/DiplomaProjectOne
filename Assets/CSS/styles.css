@@ -191,7 +191,7 @@ footer i{
     transition: all 0.2s 0.1s ease-in-out;
     color: #fff;
     border-radius: 5px;
-    /* center overlay text */
+    /*center overlay text*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,6 +200,34 @@ footer i{
     transform: scale(1);
   }
 
+
+/*Newsletter*/
+#formTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+}
+#NewsletterForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+#NewsletterForm input{
+    width:50%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+#NewsletterForm input[type=checkbox]{
+    width: auto;
+}
+#NewsletterForm label{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 /*Start to scale down our images*/
 @media screen and (max-width:1600px){
     div.Kuromi {
