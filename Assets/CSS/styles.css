@@ -141,6 +141,65 @@ footer i{
     margin-top: 8px;
 }
 
+/*Gallery*/
+.imgGallery{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    gap:10px;
+}
+
+.imgGallery > li{
+    flex-basis: 350px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgGallery li img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.imgGallery a{
+    font-family: Quicksand, sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.imgGallery::after {
+    content: "";
+    flex-basis: 350px;
+  }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgGallery li:hover .overlay {
+    transform: scale(1);
+  }
+
 /*Start to scale down our images*/
 @media screen and (max-width:1600px){
     div.Kuromi {
