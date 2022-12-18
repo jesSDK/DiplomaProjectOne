@@ -75,7 +75,7 @@ header{
     display: flex;
 }
 #about{
-    height:600px;
+    height:100%;
     padding-top: 30px;
 }
 #about p{
@@ -109,11 +109,53 @@ div.kuromi{
     width: auto;
     height: auto;
 }
+#KuromiRight, #KuromiLeft{
+    margin-left:100px;
+    margin-right:100px;
+}
+
+
+/*Latest News*/
+#latest-news{
+    display: flex;
+    flex:1;
+}
+.twitter-timeline{
+    width: 40%;
+    margin-left: 30%;
+}
+#LNews{
+    text-align: center;
+    justify-content: center;
+}
+/*footer*/
+footer{
+    display:flex;
+    justify-content: space-evenly;
+    height:50px;
+    background-color: #474747;
+    font-size:200%;
+}
+footer i{
+    color:#FA80B5;
+    margin-top: 8px;
+}
 
 /*Start to scale down our images*/
 @media screen and (max-width:1600px){
     div.Kuromi {
         flex: 0.5;
+    }
+    .Kuromi>img{
+        transform: scale(0.7);
+        margin: 0;
+    }
+    #KuromiRight, #KuromiLeft{
+        margin:0;
+    }
+    .twitter-timeline{
+        width: 60%;
+        margin-left: 20%;
     }
 }
 /*Size down our logo for medium screen sizes*/
@@ -149,6 +191,10 @@ div.kuromi{
 @media screen and (max-width: 900px){
     #landingTitle{
         margin-top: 11%;
+    }
+    .twitter-timeline{
+        width: 100%;
+        margin:0;
     }
 }
 /*Rescale for small screens*/
