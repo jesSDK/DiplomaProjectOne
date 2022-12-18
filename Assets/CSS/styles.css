@@ -33,7 +33,7 @@ h2 {
 /*Header*/
 header {
     background-color: #FA80B5;
-    background-image: url("/Assets/Images/header.png");
+    background-image: url("Assets/Images/header.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
