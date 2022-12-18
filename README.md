@@ -52,4 +52,14 @@ Alongside testing on various browsers, the built in chrome developer tools were 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  
+## Deployment
+- The site was deployed using GitHub pages
+ - It was built using the master branch and is available live at https://jessdk.github.io/DiplomaProjectOne/
+ 
+## Credits
+
+Thank you to everyone over on the slack channels, and to all my friends I used as rubber ducks for this whole project!
+This tutorial was used for helping to create creating the gallery https://blog.logrocket.com/responsive-image-gallery-css-flexbox/ 
+The text sections on the landing page are slightly edited versions of the ones available at https://hellokitty.fandom.com/wiki/Kuromi
