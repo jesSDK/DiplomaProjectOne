@@ -37,6 +37,9 @@ Finally, we offer a newsletter service, allowing users to get weekly recaps of a
     - It also includes a checkbox to confirm people are okay with subscribing
 ![SignUp](https://i.imgur.com/fYQm1cq.png)
 
+## Bugs
+There is a bug on mobile devices where it becomes impossible to scroll back up to the top of the website after reaching the bottom of the twitter feed, this could be fixed by either changing the scaling more or more optimally by adding a "return to top" button overlay on the screen.
+
 ## Testing
 
 The site was rigorously tested on a variety of devices and browsers. Some of them include
